@@ -70,8 +70,8 @@
         </div>
       </div>
       <div class="bg-white p-8 shadow-lg text-left rounded-lg mb-8 lg:absolute lg:mt-[26rem] lg:pl-1">
-        <div class="pb-8 pl-8 text-lg font-semibold">CSS code</div>
-        <code class="flex flex-wrap text-wrap text-left bg-white overflow-x-hidden pl-8" :key="boxShadow">
+        <div class="pb-8 lg:pl-8 pl-2 text-lg font-semibold">CSS code</div>
+        <code class="flex flex-wrap text-wrap text-left bg-white overflow-x-hidden pl-2 lg:pl-8" :key="boxShadow">
         box-shadow: {{ boxShadow }};
       </code>
       </div>
