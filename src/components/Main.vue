@@ -53,7 +53,7 @@
     <div class="flex flex-col p-4 ">
       <div class="rounded-lg shadow-lg text-center mb-4">
         <div
-          class="p-4 rounded-tr-lg rounded-tl-lg flex flex-row place-items-center content-around w-full gap-60 gap bg-white">
+          class="p-4 rounded-tr-lg rounded-tl-lg flex flex-row place-items-center content-around w-full gap-60 max-lg:gap-10 bg-white">
           <div class="text-left pl-4 text-lg font-semibold"> Preview </div>
           <div class="flex flex-row">
             <div class="border border-gray-300 p-1 h-8 w-12 rounded-md m-2 inline-table">
@@ -71,7 +71,7 @@
       </div>
       <div class="bg-white p-8 shadow-lg text-left rounded-lg mb-8 lg:absolute lg:mt-[26rem] lg:pl-1">
         <div class="pb-8 pl-8 text-lg font-semibold">CSS code</div>
-        <code class="flex  text-left bg-white overflow-hidden pl-8" :key="boxShadow">
+        <code class="flex flex-wrap text-wrap text-left bg-white overflow-x-hidden pl-8" :key="boxShadow">
         box-shadow: {{ boxShadow }};
       </code>
       </div>
@@ -172,7 +172,7 @@ export default {
 
 <style lang="scss">
 .range-input {
-  width: 190%;
+  width: 182%;
   height: 4px;
 }
 
@@ -193,9 +193,7 @@ export default {
     height: 4px;
   }
 
-  .gap {
-    gap: 30rem;
-  }
+ 
 }
 
 @media screen and (max-width: 690px) {
@@ -204,9 +202,7 @@ export default {
     height: 4px;
   }
 
-  .gap {
-    gap: 25rem;
-  }
+ 
 }
 
 @media screen and (max-width: 560px) {
@@ -215,9 +211,7 @@ export default {
     height: 4px;
   }
 
-  .gap {
-    gap: 18rem;
-  }
+ 
 }
 
 @media screen and (max-width: 460px) {
@@ -226,9 +220,7 @@ export default {
     height: 4px;
   }
 
-  .gap {
-    gap: 12rem;
-  }
+  
 }
 
 @media screen and (max-width: 350px) {
@@ -237,9 +229,7 @@ export default {
     height: 4px;
   }
 
-  .gap {
-    gap: 4rem;
-  }
+  
 }
 
 .color-input {
